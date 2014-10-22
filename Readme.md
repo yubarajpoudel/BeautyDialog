@@ -24,7 +24,7 @@ Using the library
 ================
 1) create the linear layout where you want to display the beauty dialog	
 	<p>
-  <LinearLayout
+  LinearLayout
         android:id="@+id/dialog_container"
 	 android:layout_width="match_parent"
 	android:layout_height="wrap_content"
@@ -32,7 +32,7 @@ Using the library
         android:orientation="horizontal"
 	android:gravity="centre"
 	android:padding="10dp"
-	android:visibility="gone" /></p>
+	android:visibility="gone" </p>
 2) write down the following code where you want trigger the Beauty Dialog
 
 	Animatebox ab = new Animatebox(MainActivity.this);
