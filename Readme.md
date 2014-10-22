@@ -23,6 +23,7 @@ Adding BeautyDialog to your project
 Using the library
 ================
 1) create the linear layout where you want to display the beauty dialog	
+	<p>
   <LinearLayout
         android:id="@+id/dialog_container"
 	 android:layout_width="match_parent"
@@ -31,7 +32,7 @@ Using the library
         android:orientation="horizontal"
 	android:gravity="centre"
 	android:padding="10dp"
-	android:visibility="gone" />
+	android:visibility="gone" /></p>
 2) write down the following code where you want trigger the Beauty Dialog
 
 	Animatebox ab = new Animatebox(MainActivity.this);
