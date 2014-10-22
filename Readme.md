@@ -22,6 +22,26 @@ Adding BeautyDialog to your project
 
 Using the library
 ================
+1) create the linear layout where you want to display the beauty dialog	
+  <LinearLayout
+        android:id="@+id/dialog_container"
+	 android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#000000"
+        android:orientation="horizontal"
+	android:gravity="centre"
+	android:padding="10dp"
+	android:visibility="gone" />
+2) write down the following code where you want trigger the Beauty Dialog
+
+	Animatebox ab = new Animatebox(MainActivity.this);
+	ab.setTextmesg("No Internet connection");
+	ab.setAnimation(Utils.LENGTH_LONG);
+	ab.setColor(Utils.BLUE);
+	ab.setImage(R.drawable.ic_launcher);
+
+	or
+	Animatebox.Create(this, "No Internet Connection",R.drawable.ic_launcher, Utils.LENGTH_LONG);		}
 
 
 
